@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - Poupe Bank</title>
+
+    <link rel="stylesheet" href="stlye.css">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <img src="imagem.png.png" alt="Logo Poupe Bank" class="logo">
+
+        <div class="titulo">
+
+            <h1>Poupe Bank</h1>
+
+            <p>Plataforma de Finanças Pessoais</p>
+
+        </div>
+
+
+        <!-- MENU -->
+
+        <nav class="menu-principal">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+
+            <!-- SOBRE -->
+
+            <div class="dropdown">
+
+                <a href="#" id="btn-sobre">
+                    Sobre ▾
+                </a>
+
+                <div id="menu-vertical-sobre" class="submenu">
+
+                    <a href="sobre.html#empresa">
+                        Empresa
+                    </a>
+
+                    <a href="sobre.html#clientes">
+                        Clientes
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTATO -->
+
+            <div class="dropdown">
+
+                <a href="#" id="btn-contato">
+                    Contato ▾
+                </a>
+
+                <div id="menu-vertical-contato" class="submenu">
+
+                    <a href="#" id="btn-telefone">
+                        Telefone
+                    </a>
+
+                    <a href="#" id="btn-email">
+                        Email
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <a href="cadastro.html">
+                Cadastrar
+            </a>
+
+            <a href="oficial.html">
+                Finanças
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main>
+
+        <section class="cadastro">
+
+            <h2>Cadastro do Usuário</h2>
+
+            <p>
+                Preencha seus dados para criar sua conta.
+            </p>
+
+
+            <!-- FORMULÁRIO -->
+
+            <form id="formCadastro">
+
+                <label for="nome">
+                    Nome:
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+
+                <label for="cpf">
+                    CPF:
+                </label>
+
+                <input
+                    type="text"
+                    id="cpf"
+                    name="cpf"
+                    placeholder="000.000.000-00"
+                    required
+                >
+
+
+                <label for="endereco">
+                    Endereço:
+                </label>
+
+                <input
+                    type="text"
+                    id="endereco"
+                    name="endereco"
+                    placeholder="Digite seu endereço"
+                    required
+                >
+
+
+                <label for="email">
+                    E-mail:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+
+                <label for="senha">
+                    Senha:
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+
+                <label for="confirmarSenha">
+                    Confirmar senha:
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmarSenha"
+                    name="confirmarSenha"
+                    placeholder="Digite a senha novamente"
+                    required
+                >
+
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+
+            </form>
+
+
+            <p id="mensagem"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p id="dataAtual">
+            Data atual
+        </p>
+
+        <p>
+            Todos os direitos reservados.
+            Henrique e João.
+        </p>
+
+        <a href="index.html" class="voltar">
+            ← Voltar para o início
+        </a>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

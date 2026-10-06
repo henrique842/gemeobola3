@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minhas Finanças - Poupe Bank</title>
+
+    <link rel="stylesheet" href="stlye.css">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <img src="imagem.png.png" alt="Logo Poupe Bank" class="logo">
+
+        <div class="titulo">
+
+            <h1>Poupe Bank</h1>
+
+            <p>Plataforma de Finanças Pessoais</p>
+
+        </div>
+
+
+        <!-- MENU -->
+
+        <nav class="menu-principal">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+
+            <!-- SOBRE -->
+
+            <div class="dropdown">
+
+                <a href="#" id="btn-sobre">
+                    Sobre ▾
+                </a>
+
+                <div id="menu-vertical-sobre" class="submenu">
+
+                    <a href="sobre.html#empresa">
+                        Empresa
+                    </a>
+
+                    <a href="sobre.html#clientes">
+                        Clientes
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTATO -->
+
+            <div class="dropdown">
+
+                <a href="#" id="btn-contato">
+                    Contato ▾
+                </a>
+
+                <div id="menu-vertical-contato" class="submenu">
+
+                    <a href="#" id="btn-telefone">
+                        Telefone
+                    </a>
+
+                    <a href="#" id="btn-email">
+                        Email
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <a href="cadastro.html">
+                Cadastrar
+            </a>
+
+            <a href="oficial.html">
+                Finanças
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main>
+
+       <main>
+
+    <section class="financas">
+
+        <h2>Minhas Finanças</h2>
+
+        <p>
+            Organize seus ganhos e despesas de forma simples.
+        </p>
+
+
+        <!-- RESUMO -->
+
+        <div class="resumo">
+
+            <h3>Resumo financeiro</h3>
+
+            <p>
+                <strong>Ganhos:</strong>
+                R$ 0,00
+            </p>
+
+            <p>
+                <strong>Despesas:</strong>
+                R$ 0,00
+            </p>
+
+            <p>
+                <strong>Saldo:</strong>
+                R$ 0,00
+            </p>
+
+        </div>
+
+
+        <!-- GANHO E DESPESA -->
+
+        <div class="movimentacoes">
+
+            <div class="campo-financeiro">
+
+                <h3>Cadastrar ganho</h3>
+
+                <form id="formGanho">
+
+                    <label for="ganho">
+                        Valor do ganho:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="ganho"
+                        name="ganho"
+                        step="0.01"
+                        min="0"
+                        placeholder="Ex: 1500.00"
+                        required
+                    >
+
+                    <button type="submit">
+                        Adicionar ganho
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <div class="campo-financeiro">
+
+                <h3>Cadastrar despesa</h3>
+
+                <form id="formDespesa">
+
+                    <label for="despesa">
+                        Valor da despesa:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="despesa"
+                        name="despesa"
+                        step="0.01"
+                        min="0"
+                        placeholder="Ex: 200.00"
+                        required
+                    >
+
+                    <button type="submit">
+                        Adicionar despesa
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <p id="mensagemFinancas">
+            Adicione seus ganhos e despesas para acompanhar seu saldo.
+        </p>
+
+
+        <a href="index.html">
+            <button type="button">
+                Voltar para o início
+            </button>
+        </a>
+
+    </section>
+
+</main>
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            PoupeBank &copy; 2026
+        </p>
+
+        <p>
+            Henrique e João
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
